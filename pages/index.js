@@ -1,17 +1,7 @@
-import Header from '../compornents/header'
-import Hero from '../compornents/hero'
-import Footer from '../compornents/footer'
+import Hero from 'compornents/hero'
 
 const Home = () => {
-  return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-      </main>
-      <Footer />
-    </>
-  )
+  return <Hero title='CUBE' subtitle='アウトプットしていくサイト' />
 }
 
 export default Home
