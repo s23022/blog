@@ -3,7 +3,7 @@ import Nav from 'compornents/nav'
 
 const Header = () => (
   <header>
-    <Logo />
+    <Logo boxOn />
     <Nav />
   </header>
 )
