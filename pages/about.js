@@ -2,6 +2,9 @@ import Container from 'compornents/container'
 import Hero from 'compornents/hero'
 import PostBody from 'compornents/post-body'
 import Contact from 'compornents/contact'
+import Image from 'next/image'
+import eyecatch from 'next-react-website/blog-app-router/images/about.jpg'
+
 import {
   TwoColumn,
   TwoColumnMain,
@@ -12,6 +15,17 @@ const About = () => {
   return (
     <Container>
       <Hero title='About' subtitle='About development activities' />
+
+      <figure>
+        <Image
+          src={eyecatch}
+          alt=''
+          layout='responsive'
+          sizes='(min-width: 1152px) 1152px, 100vw'
+          priority
+          placeholder='blur'
+        />
+      </figure>
 
       <TwoColumn>
         <TwoColumnMain>
