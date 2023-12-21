@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Container from 'compornents/container'
 import Hero from 'compornents/hero'
 import PostBody from 'compornents/post-body'
@@ -14,6 +15,10 @@ import {
 const About = () => {
   return (
     <Container>
+      <Head>
+        <title>アバウト</title>
+      </Head>
+
       <Hero title='About' subtitle='About development activities' />
 
       <figure>
