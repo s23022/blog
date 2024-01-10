@@ -8,6 +8,7 @@ import {
   TwoColumnSidebar
 } from 'compornents/two-column'
 import ConvertBody from 'compornents/convert-body'
+import PostCategories from 'compornents/post-categories'
 import Image from 'next/image'
 
 export default function Schedule ({
@@ -39,7 +40,9 @@ export default function Schedule ({
               <ConvertBody contentHTML={content} />
             </PostBody>
           </TwoColumnMain>
-          <TwoColumnSidebar></TwoColumnSidebar>
+          <TwoColumnSidebar>
+            <PostCategories categories={categories} />
+          </TwoColumnSidebar>
         </TwoColumn>
       </article>
     </Container>
