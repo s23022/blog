@@ -1,4 +1,6 @@
 import { getPostBySlug } from 'lib/api'
+import { extractText } from 'lib/extract-text'
+import Meta from 'compornents/meta'
 import Container from 'compornents/container'
 import PostHeader from 'compornents/post-header'
 import PostBody from 'compornents/post-body'
@@ -16,10 +18,19 @@ export default function Schedule ({
   publish,
   content,
   eyecatch,
-  categories
+  categories,
+  description
 }) {
   return (
     <Container>
+      <Meta
+        pageTitle={title}
+        pageDesc={description}
+        pageImg={eyecatch.url}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
+
       <article>
         <PostHeader title={title} subtitle='Blog Article' publish={publish} />
 
@@ -54,13 +65,16 @@ export async function getStaticProps () {
 
   const post = await getPostBySlug(slug)
 
+  const description = extractText(post.content)
+
   return {
     props: {
       title: post.title,
       publish: post.publishDate,
       content: post.content,
       eyecatch: post.eyecatch,
-      categories: post.categories
+      categories: post.categories,
+      description: description
     }
   }
 }
