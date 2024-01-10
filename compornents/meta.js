@@ -12,7 +12,7 @@ const {
 } = siteMeta
 
 // 汎用OGP画像
-import siteImg from 'next-react-website/blog-app-router/images/ogp.jpg'
+import siteImg from 'images/ogp.jpg'
 
 const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
   const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle

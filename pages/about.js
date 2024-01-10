@@ -4,7 +4,7 @@ import Hero from 'compornents/hero'
 import PostBody from 'compornents/post-body'
 import Contact from 'compornents/contact'
 import Image from 'next/image'
-import eyecatch from 'next-react-website/blog-app-router/images/about.jpg'
+import eyecatch from 'images/about.jpg'
 
 import {
   TwoColumn,
