@@ -1,0 +1,24 @@
+{
+    "postLists": [
+        {
+            "id": 1,
+            "title": "user 1",
+            "name": "Leo Dover"
+        },
+        {
+            "id": 2,
+            "title": "user 2",
+            "name": "Morris Hurley"
+        },
+        {
+            "id": 3,
+            "title": "user 3",
+            "name": "James Kissack"
+        },
+        {
+            "id": 4,
+            "title": "user 4",
+            "name": "Ricky Hamer"
+        }
+    ]
+}
